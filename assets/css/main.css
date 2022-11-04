@@ -154,12 +154,12 @@ input, select, textarea {
 		}
 
 		a:hover {
-			color: #0C7B93;
+			color: rgb(68, 106, 187);
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
 			a:hover strong {
-				color: #0C7B93;
+				color: rgb(68, 106, 187);
 			}
 
 	strong, b {
@@ -1778,7 +1778,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #0C7B93;
+		background: rgb(49, 72, 121);
 		color: #fff !important;
 		text-transform: uppercase;
 		border-radius: 4px;
@@ -1809,7 +1809,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #00A8CC;
+			background:  rgb(68, 106, 187);
 		}
 
 		input[type="button"]:active,
@@ -1817,7 +1817,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #00A8CC;
+			background: rgb(49, 72, 121);;
 		}
 
 		input[type="button"].alt,
@@ -1926,7 +1926,7 @@ input, select, textarea {
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #0C7B93;
+			color: rgb(49, 72, 121);
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
@@ -2010,13 +2010,13 @@ input, select, textarea {
 
 			#nav > ul > li.active > a:before,
 			#nav > ul > li:hover > a:before {
-				background: #0C7B93;
+				background: rgb(49, 72, 121);
 				color: #fff;
 			}
 
 			#nav > ul > li.active > a > span,
 			#nav > ul > li:hover > a > span {
-				color: #ED786A;
+				color: rgb(49, 72, 121);
 			}
 
 	.dropotron {
@@ -2083,7 +2083,7 @@ input, select, textarea {
 				-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 				transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-				color: #0C7B93;
+				color: rgb(49, 72, 121);
 			}
 
 /* Features */
