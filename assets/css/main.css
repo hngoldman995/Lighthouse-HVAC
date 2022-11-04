@@ -1227,6 +1227,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			.logo{
+				width: 100%;
+			}
+
 			.row {
 				display: flex;
 				flex-wrap: wrap;
