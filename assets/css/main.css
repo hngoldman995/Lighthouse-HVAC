@@ -2712,3 +2712,7 @@ input, select, textarea {
 				}
 
 	}
+
+	.links>li{
+		color: rgb(211, 201, 201);
+	}
