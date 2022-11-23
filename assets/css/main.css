@@ -216,7 +216,7 @@ input, select, textarea {
 		width: 70em;
 	}
 	.container > header {
-		padding-bottom: 45px;;
+		padding-bottom: 45px;
 	}
 	.maintenance {
 		font-size: 2.5rem;
@@ -228,6 +228,9 @@ input, select, textarea {
 
 			.container {
 				width: 68em;
+			}
+			.container > header {
+				padding-bottom: 15px;
 			}
 
 		}
