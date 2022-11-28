@@ -71,6 +71,13 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+.fade-in-text {
+	animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+  }
 
 /* Basic */
 
@@ -1509,6 +1516,13 @@ input, select, textarea {
 		display: inline-block;
 		border: solid 6px #ebebeb !important;
 	}
+
+	.fade-in-image { animation: fadeIn 5s; }
+
+	@keyframes fadeIn {
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+	  }
 
 		.image:hover {
 			opacity: 0.9;
