@@ -53,6 +53,17 @@ table {
 
 body {
 	-webkit-text-size-adjust: none;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100%  {
+		opacity: 1;
+	}
 }
 
 mark {
@@ -71,7 +82,7 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-.fade-in-text {
+/* .fade-in-text {
 	animation: fadeIn 5s;
   }
   @keyframes fadeIn {
@@ -84,7 +95,9 @@ input, select, textarea {
 	@keyframes fadeIn {
 		0% { opacity: 0; }
 		100% { opacity: 1; }
-	  }
+	  } */
+
+	 
 
 /* Basic */
 
