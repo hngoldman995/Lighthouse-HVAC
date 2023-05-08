@@ -61,8 +61,8 @@
 							<a href="#airQuality" class="icon fa-chart-bar"><span>Indoor Air Quality</span></a>
 							
 						</li>
-						<li><a href="#" class="icon fa-chart-bar"><span>Water Heaters</span></a></li>
-						<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>About Us</span></a></li>
+						<!-- <li><a href="#" class="icon fa-chart-bar"><span>Water Heaters</span></a></li>
+						<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>About Us</span></a></li> -->
 					</ul>
 				</nav>
 
@@ -333,29 +333,28 @@
 	<section id="footer">
 		<div class="container">
 			<header>
-				<h2>Questions or comments? <strong>Get in touch:</strong></h2>
+				<!-- <h2>Questions or comments? <strong>Get in touch:</strong></h2> -->
 			</header>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-6 col-12-medium">
 					<section>
-						<form onsubmit="sendEmail(); reset(); return false;" method="post" action="#">
+						<form onsubmit="sendEmail(); reset(); return false;">
 							<div class="row gtr-50">
 								<div class="col-6 col-12-small">
-									<input name="name" placeholder="Name" type="text" />
+									<input id="name" placeholder="Your Name" type="text" />
 								</div>
 								<div class="col-6 col-12-small">
-									<input name="email" placeholder="Email" type="text" />
+									<input type="email" placeholder="Email" id="email" />
 								</div>
 								<div class="col-12">
-									<textarea name="message" placeholder="Message"></textarea>
+									<textarea id="message" placeholder="Message"></textarea>
 								</div>
 								<div class="col-12">
-									<a href="#" class="form-button-submit button icon solid fa-envelope">Send
-										Message</a>
+									<button type="submit">Send Message</button>
 								</div>
 							</div>
 						</form>
-					</section>
+					</section> -->
 				</div>
 				<div class="col-6 col-12-medium">
 					<section>
@@ -410,7 +409,7 @@
 				Host : "smtp.gmail.com",
 				Username : "hannahgoldman995@gmail.com",
 				Password : "Crazy88mma135",
-				To : 'them@website.com',
+				To : 'hannahgoldman995@gmail.com',
 				From : document.getElemendById('email').value,
 				Subject : 'New Contact Form Enquiry',
 				Body : "And this is the body"
