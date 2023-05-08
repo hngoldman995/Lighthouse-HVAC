@@ -338,7 +338,7 @@
 			<div class="row">
 				<div class="col-6 col-12-medium">
 					<section>
-						<form method="post" action="#">
+						<form onsubmit="sendEmail(); reset(); return false;" method="post" action="#">
 							<div class="row gtr-50">
 								<div class="col-6 col-12-small">
 									<input name="name" placeholder="Name" type="text" />
@@ -359,9 +359,7 @@
 				</div>
 				<div class="col-6 col-12-medium">
 					<section>
-						<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-							mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-							leo nibh, rutrum eu malesuada.</p>
+						<p></p>
 						<div class="row">
 							<div class="col-6 col-12-small">
 								<ul class="icons">
@@ -405,6 +403,23 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail(){
+			Email.send({
+				Host : "smtp.gmail.com",
+				Username : "hannahgoldman995@gmail.com",
+				Password : "Crazy88mma135",
+				To : 'them@website.com',
+				From : document.getElemendById('email').value,
+				Subject : 'New Contact Form Enquiry',
+				Body : "And this is the body"
+			}).then(
+			message => alert(message)
+			);
+
+		}
+	</script>
 
 </body>
 
