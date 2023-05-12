@@ -7,6 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -31,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background-color: rgb(255, 255, 255);
 }
 
 ol, ul {
@@ -101,8 +103,86 @@ input, select, textarea {
 
 /* Basic */
 
+.container > p {
+	padding-bottom: 10px;
+}
+.stupidButton {
+	margin-top: 30px;
+}
+
+.fade-in-image {
+	padding-top: 80px;
+	
+}
+
+.intro2 {
+	color: white;
+	width: 50%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+ .intro2 h2 {
+	font-weight: bold;
+	font-size: 1.5rem;
+ }
+ 
+ #services h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	color:rgb(33, 38, 78);
+	padding: 100px 200px;
+ }
+
+ .flex-container{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	gap: 40px 40px;
+	padding-left: 200px;
+	padding-bottom: 20px
+ }
+
+ .flex-container h2 {
+	font-size: 1rem;
+	font-weight: bold;
+	
+ }
 
 
+.flex-container img {
+	width: 80px;
+	display: inline;
+	
+}
+
+
+
+@media (max-width: 800px) {
+	.flex-container {
+	  flex-direction: row;
+	  padding-left: 100px;
+	  width: 100%;
+	  
+	}
+	#services h1 {
+		padding: 60px 100px;
+	}
+	#services {
+		padding-top: 20px;
+	}
+
+
+  }
+
+
+	  #intro {
+		padding-bottom: 50px;;
+	  }
+	
+	#logo {
+		padding-bottom: 80px;
+		color: white;
+	}
 	
 	.logo{
 		width: 40%;
@@ -117,9 +197,7 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #f0f0f0;
-	}
+	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -141,9 +219,13 @@ input, select, textarea {
 	}
 
 	h1, h3, h4, h5, h6 {
+		
 		font-weight: 600;
 		text-transform: uppercase;
 		color: #888;
+	}
+	h1 {
+		font-size: 1.8rem;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -153,7 +235,7 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.65em;
+		font-size: 1.5rem;
 		font-weight: 400;
 		letter-spacing: 2px;
 		margin: 0 0 1.5em 0;
@@ -161,7 +243,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1em;
+		
 		letter-spacing: 2px;
 		margin: 0 0 1.25em 0;
 	}
@@ -173,7 +255,7 @@ input, select, textarea {
 		transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		color: #666;
 		text-decoration: none;
-		border-bottom: solid 1px #ddd;
+		
 	}
 
 		a strong {
@@ -1808,6 +1890,24 @@ input, select, textarea {
 		}
 
 /* Button */
+
+
+
+.callButton > a {
+	color: white;
+	font-weight: 700;
+	text-decoration: none !important;
+	box-shadow: none;
+
+}
+
+.callButton {
+	 background: rgb(182, 44, 44);
+	 display: inline;
+	 padding: 8px 13px;
+	 border-radius: 3%;
+}
+
 button {
 	cursor: pointer;
 }
@@ -1892,6 +1992,7 @@ button {
 
 /* Box */
 
+
 	.no-sidebar .box.post > header {
 		text-align: center;
 	}
@@ -1959,21 +2060,21 @@ button {
 	#header {
 		position: relative;
 		position: relative;
-		background: #fff;
+		background: #2f3f69;
 		text-align: center;
 	}
 
 		#header > .container {
 			padding: 14em 0 5em 0;
-			border-bottom: solid 2px #e5e5e5;
-			box-shadow: inset 0px -8px 0px 0px #fff, inset 0px -10px 0px 0px #e5e5e5;
+			border-bottom: solid 2px #2f3f69;
+			box-shadow: inset 0px -8px 0px 0px #2f3f69, inset 0px -10px 0px 0px #2f3f69;
 		}
 
 		#header h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: rgb(49, 72, 121);
-			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
+			color: rgb(252, 253, 255);
+			text-shadow: 0.05em 0.075em 0 rgba(175, 168, 168, 0.445);
 			font-size: 3em;
 			letter-spacing: 13px;
 		}
@@ -2134,12 +2235,17 @@ button {
 
 /* Features */
 
+.slogan {
+	padding: 40px 0;
+}
+
 	#features {
 		position: relative;
 		overflow: hidden;
 		background: #fff;
 		text-align: center;
 		padding: 6em 0;
+		
 	}
 
 		#features p {
@@ -2160,8 +2266,8 @@ button {
 	#banner {
 		position: relative;
 		overflow: hidden;
-		background: #fff;
-		color: #fff;
+		background: #2f3f69;
+		color: #2f3f69;
 		text-align: center;
 		border-top: solid 2px #e5e5e5;
 		border-bottom: solid 2px #e5e5e5;
@@ -2216,12 +2322,28 @@ button {
 
 /* Main */
 
-	#main {
+	#mainBody {
 		position: relative;
 		overflow: hidden;
-		background: #fff;
+		background: #2f4368;
 		padding: 6em 0;
+		
 	}
+
+	#mainBody  h4 {
+		color: white ;
+	}
+	
+	
+	
+	#heating, #airQuality {
+		color: white;
+	}
+
+	
+
+	
+	
 
 /* Content */
 
