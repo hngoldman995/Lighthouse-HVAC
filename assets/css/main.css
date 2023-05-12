@@ -160,12 +160,12 @@ input, select, textarea {
 @media (max-width: 800px) {
 	.flex-container {
 	  flex-direction: row;
-	  padding-left: 100px;
+	  padding-left: 50px;
 	  width: 100%;
 	  
 	}
 	#services h1 {
-		padding: 60px 100px;
+		padding: 60px 50px;
 	}
 	#services {
 		padding-top: 20px;
