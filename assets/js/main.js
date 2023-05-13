@@ -63,3 +63,48 @@
 				});
 
 })(jQuery);
+
+
+//animation
+const scrollOffset = 100;
+
+const scrollElements = document.querySelector('.flex-container');
+
+// scrollElements.forEach((el) => {
+// 	el.style.opacity = 0
+// })
+
+//Function to determine how far the element is from the page
+
+const elementInView = (el, offset = 0) => {
+	const elementTop = el.getBoundingClientRect().top;
+
+	return (
+		elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - (offset))
+	);
+};
+
+//function to handle displaying the element
+
+const displayScrollElement = () => {
+	scrollElement.classList.add('scrolled');
+};
+
+//then combine logic with display function to call function on all containers
+const hideScrollElement = () => {
+	scrollElement.classList.remove('scrolled');
+};
+
+const handleScrollAnimation = () => {
+	if (elementInView(scrollElement, scrollOffset)) {
+		displayScrollElement();
+	}else{
+		hideScrollElement();
+	}
+}
+
+//lastly we pass the above method into a scroll event listener on the window so it runs whenever the user scrolls
+
+window.addEventListener('scroll', () => {
+	handleScrollAnimation();
+});

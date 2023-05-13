@@ -124,6 +124,7 @@ input, select, textarea {
  .intro2 h2 {
 	font-weight: bold;
 	font-size: 1.5rem;
+	animation: fade-in-bottom 1s ease-in-out both;
  }
  
  #services h1 {
@@ -133,13 +134,42 @@ input, select, textarea {
 	padding: 100px 200px;
  }
 
+
+ 
+  @keyframes slide-in-left {
+	0% {
+	  transform: translateX(-100px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+
+  @keyframes fade-in-bottom {
+	0% {
+	  transform: translateY(50px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+
+
+
+
  .flex-container{
 	width: 60%;
 	display: flex;
 	flex-direction: row;
 	gap: 40px 40px;
 	padding-left: 200px;
-	padding-bottom: 20px
+	padding-bottom: 20px;
+	animation: slide-in-left 1s ease-in-out both;
+	
  }
 
  .flex-container h2 {
@@ -1913,6 +1943,7 @@ input, select, textarea {
 	 display: inline;
 	 padding: 8px 13px;
 	 border-radius: 3%;
+	  
 }
 
 button {
