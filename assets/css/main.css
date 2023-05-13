@@ -213,17 +213,18 @@ input, select, textarea {
 
 
 	  #intro {
-		padding-bottom: 50px;;
+		padding-bottom: 50px;
 	  }
 	
 	#logo {
-		padding-bottom: 80px;
+		
 		color: white;
 	}
 	
+
 	.logo{
 		width: 40%;
-		margin-top: 30px;
+		padding-bottom: 15px;
 	}
 
 	html {
@@ -359,10 +360,12 @@ input, select, textarea {
 
 /* Container */
 
+
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 70em;
+		
 	}
 	.container > header {
 		padding-bottom: 45px;
@@ -1679,13 +1682,13 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 3.5em 0;
 		}
-
+/* 
 		.image.left {
 			float: left;
 			margin: 0 1.5em 1.5em 0;
 			position: relative;
 			top: 0.5em;
-		}
+		} */
 
 		.image.centered {
 			display: block;
@@ -2274,7 +2277,7 @@ button {
 /* Features */
 
 .slogan {
-	padding: 40px 0;
+	padding-top:  15px;
 }
 
 	#features {
@@ -2282,7 +2285,7 @@ button {
 		overflow: hidden;
 		background: #fff;
 		text-align: center;
-		padding: 6em 0;
+		padding: 6px 0;
 		
 	}
 
@@ -2290,9 +2293,7 @@ button {
 			text-align: center;
 		}
 
-		#features ul.actions {
-			margin-top: 1.25em;
-		}
+		
 
 /* Banner */
 
@@ -2884,12 +2885,12 @@ button {
 			}
 
 		/* Content */
-
-			#content > section,
+/* 
+			/* #content > section,
 			#content > article {
 				margin: 3em 0 0 0;
 				padding: 3em 0 0 0;
-			}
+			} */ */
 
 		/* Sidebar */
 
