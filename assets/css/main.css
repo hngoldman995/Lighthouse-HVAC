@@ -39,19 +39,10 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
-}
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
+
 
 body {
 	-webkit-text-size-adjust: none;
@@ -67,7 +58,7 @@ body {
 		opacity: 1;
 	}
 }
-
+/*  */
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -84,6 +75,9 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+/*  */
+
+
 /* .fade-in-text {
 	animation: fadeIn 5s;
   }
@@ -124,7 +118,7 @@ input, select, textarea {
  .intro2 h2 {
 	font-weight: bold;
 	font-size: 1.5rem;
-	animation: fade-in-bottom 1s ease-in-out both;
+	
  }
  
  #services h1 {
@@ -212,10 +206,10 @@ input, select, textarea {
   }
 
 
-	  #intro {
+	  /* #intro {
 		padding-bottom: 50px;
 	  }
-	
+	 */
 	#logo {
 		
 		color: white;
@@ -255,13 +249,17 @@ input, select, textarea {
 		line-height: 1.65em;
 		font-size: 15pt;
 	}
-
+/*  */
 	h1, h3, h4, h5, h6 {
 		
 		font-weight: 600;
 		text-transform: uppercase;
 		color: #888;
+
 	}
+	
+
+
 	h1 {
 		font-size: 1.8rem;
 	}
@@ -285,6 +283,8 @@ input, select, textarea {
 		letter-spacing: 2px;
 		margin: 0 0 1.25em 0;
 	}
+
+	/*  */
 
 	a {
 		-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
@@ -312,10 +312,13 @@ input, select, textarea {
 				color: rgb(68, 106, 187);
 			}
 
+
+		/*  */
 	strong, b {
 		font-weight: 600;
 		color: #666;
 	}
+	
 
 	em, i {
 		font-style: italic;
@@ -344,12 +347,14 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	/*  */
+
 	p {
 		text-align: justify;
 		margin-bottom: 2em;
 		font-size: 1.2rem;;
 	}
-
+/*  */
 	ul, ol, dl, table, blockquote {
 		margin-bottom: 2em;
 	}
@@ -357,6 +362,7 @@ input, select, textarea {
 	br.clear {
 		clear: both;
 	}
+/*  */
 
 /* Container */
 
@@ -2111,18 +2117,29 @@ button {
 			box-shadow: inset 0px -8px 0px 0px #2f3f69, inset 0px -10px 0px 0px #2f3f69;
 		}
 
-		#header h1 {
+		#header h2 {
 			font-family: 'Arvo';
 			font-weight: 700;
 			color: rgb(252, 253, 255);
 			text-shadow: 0.05em 0.075em 0 rgba(175, 168, 168, 0.445);
-			font-size: 3em;
+			font-size: 2.5em;
 			letter-spacing: 13px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		
+		#header h1 {
+			text-transform: capitalize;
+			color: rgb(255, 251, 251);
+			padding-bottom: 35px;
+			animation: fade-in-bottom 1s ease-in-out both;
+			letter-spacing: 8px;
+			line-height: 1.325em;
 		}
 
-			#header h1 a {
+			/* #header h1 a {
 				border: 0;
-			}
+			} */
 
 		#header p {
 			text-transform: uppercase;
@@ -2503,9 +2520,7 @@ button {
 				padding: 12em 0 5em 0;
 			}
 
-			#header h1 {
-				font-size: 2.5em;
-			}
+		
 
 			
 
@@ -2789,6 +2804,10 @@ button {
 					display: none;
 				}
 
+		#header h1 {
+
+		}
+
 		/* Image */
 
 			.image.featured {
@@ -2838,11 +2857,13 @@ button {
 			#header > .container {
 				padding: 6em 0 4em 0;
 			}
+			
 
 			#header h1 {
-				font-size: 2em;
+				font-size: 1.5em;
 				letter-spacing: 8px;
 				line-height: 1.325em;
+				color: white;
 			}
 
 			#header p {
