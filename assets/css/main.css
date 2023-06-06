@@ -2793,11 +2793,15 @@ button {
 				font-size: 11pt;
 			}
 
-			h2, h3, h4, h5, h6 {
-				font-size: 1.2em;
+			 h3, h4, h5, h6 {
+				font-size: 1em;
 				letter-spacing: 2px;
 				text-align: center;
 				/* margin: 0 0 1em 0; */
+			}
+
+			h2 {
+				font-size: 1em;
 			}
 
 				h2 br, h3 br, h4 br, h5 br, h6 br {
