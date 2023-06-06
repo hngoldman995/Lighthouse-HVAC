@@ -107,10 +107,7 @@ input, select, textarea {
 	margin-top: 30px;
 }
 
-/* .fade-in-image {
-	padding-top: 30px;
-	
-} */
+
 
 .intro2 {
 	color: white;
@@ -118,11 +115,7 @@ input, select, textarea {
 	margin: auto;
 	padding-bottom: 20px;
 }
- /* .intro2 h2 {
-	font-weight: bold;
-	font-size: 1.5rem;
-	
- } */
+
  
  #services h1 {
 	font-size: 2rem;
@@ -202,9 +195,9 @@ input, select, textarea {
 		padding-top: 20px;
 	}
 
-	.intro2 {
+	/* .intro2 {
 		width: 80%;
-	}
+	} */
 	.container > p {
 		color: white;
 	}
