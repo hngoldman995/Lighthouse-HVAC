@@ -2295,6 +2295,7 @@ button {
 
 .slogan {
 	padding-top:  15px;
+	color:#555;
 }
 
 	#features {
@@ -2794,9 +2795,10 @@ button {
 			}
 
 			 h3, h4, h5, h6 {
-				font-size: 1em;
+				font-size: 1.2em;
 				letter-spacing: 2px;
 				text-align: center;
+				padding-top: 8px;
 				/* margin: 0 0 1em 0; */
 			}
 
