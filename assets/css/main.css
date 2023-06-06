@@ -259,11 +259,14 @@ input, select, textarea {
 
 	}
 	
+	#mainBody h1 {
+		color: white;
+	}
 
 
 	h1 {
 		font-size: 1.8rem;
-		color: white;
+		
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2798,12 +2801,12 @@ button {
 				font-size: 1.3em;
 				letter-spacing: 2px;
 				text-align: center;
-				padding-top: 12px;
 				/* margin: 0 0 1em 0; */
 			}
 
 			h2 {
-				font-size: 1em;
+				font-size: 1.4em;
+				padding-top: 12px;
 			}
 
 				h2 br, h3 br, h4 br, h5 br, h6 br {
