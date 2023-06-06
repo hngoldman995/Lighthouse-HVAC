@@ -39,7 +39,10 @@ ol, ul {
 	list-style: none;
 }
 
-
+.hr {
+	width: 88%;
+	margin: auto;
+}
 
 
 
@@ -104,10 +107,10 @@ input, select, textarea {
 	margin-top: 30px;
 }
 
-.fade-in-image {
-	padding-top: 80px;
+/* .fade-in-image {
+	padding-top: 30px;
 	
-}
+} */
 
 .intro2 {
 	color: white;
@@ -126,6 +129,10 @@ input, select, textarea {
 	font-weight: bold;
 	color:rgb(33, 38, 78);
 	padding: 100px 200px;
+ }
+
+ #services {
+	padding-bottom: 40px;
  }
 
 
