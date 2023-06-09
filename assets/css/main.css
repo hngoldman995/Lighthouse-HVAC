@@ -2119,6 +2119,7 @@ button {
 	border-color: grey;
 	width: 45%;
 	margin: 0;
+	
 }
 
 
@@ -2873,6 +2874,7 @@ button {
 					border-style: solid;
 					border-color: grey;
 					width: 100%;
+					padding-bottom: 140px;
 				}
 
 				
