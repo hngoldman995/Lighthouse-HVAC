@@ -100,6 +100,10 @@ input, select, textarea {
 
 /* Basic */
 
+
+
+
+
 .container > p {
 	padding-bottom: 10px;
 }
@@ -163,8 +167,8 @@ input, select, textarea {
 	padding-left: 200px;
 	padding-bottom: 20px;
 	animation: slide-in-left 1s ease-in-out both;
-	
  }
+
 
  .flex-container h2 {
 	font-size: 1rem;
@@ -2043,6 +2047,8 @@ button {
 /* Box */
 
 
+
+
 	.no-sidebar .box.post > header {
 		text-align: center;
 	}
@@ -2107,12 +2113,56 @@ button {
 
 /* Header */
 
-	#header {
+
+#blogPage article {
+	border-style: solid;
+	border-color: grey;
+	width: 45%;
+	margin: 0;
+}
+
+
+#blogPage {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+	
+	#blogHeader {
+		position: relative;
+		text-align: center;
+		height: 520px;
+		background-image: url('../images/Thomas_Point_Lighthouse_Chesapeake_Bay.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.80;
+	}
+	#blogHeader h1 {
+		color:#0b0f22;
+	} 
+
+	#blogHeader div {
+		padding-left: 45%;
+		padding-top: 210px;
+		animation: fade-in-bottom 1s ease-in-out both;
+	}
+
+
+	 #header{
 		position: relative;
 		position: relative;
 		background: #2f3f69;
 		text-align: center;
 	}
+	
 
 		#header > .container {
 			padding: 14em 0 5em 0;
@@ -2131,7 +2181,7 @@ button {
 			text-align: center;
 		}
 		
-		#header h1 {
+		#header h1, .blogImage h1 {
 			text-transform: capitalize;
 			color: rgb(255, 251, 251);
 			padding-bottom: 35px;
@@ -2140,9 +2190,7 @@ button {
 			line-height: 1.325em;
 		}
 
-			/* #header h1 a {
-				border: 0;
-			} */
+		
 
 		#header p {
 			text-transform: uppercase;
@@ -2178,14 +2226,14 @@ button {
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 400;
-				color: #777;
+				color: #000000;
 				outline: 0;
 				display: block;
 			}
 
 				#nav > ul > li > a:before {
 					display: inline-block;
-					background: #878787;
+					background: #383737;
 					color: #e4e4e4;
 					width: 2.25em;
 					font-size: 0.8em;
@@ -2492,7 +2540,9 @@ button {
 			body, input, textarea, select {
 				font-size: 13pt;
 			}
+		
 
+			
 	}
 
 /* Large */
@@ -2818,6 +2868,14 @@ button {
 				.intro2 {
 					width: 100%;
 				}
+
+				#blogPage article {
+					border-style: solid;
+					border-color: grey;
+					width: 100%;
+				}
+
+				
 
 		
 
