@@ -2561,6 +2561,30 @@ button {
 
 	@media screen and (min-width: 1280px) {
 		/* For Big TV's (HD Screens)  */
+		header h2 {
+			font-size: 1.5rem;
+		}
+		h2, h3 {
+			 font-size: 2.2rem;
+		}
+
+		p {
+			font-size: 2rem;
+		}
+		
+
+		.maintenance > h1 {
+			font-size: 1.8rem;
+		}
+		
+		.flex-items{
+			width: 65%;
+			margin: auto;
+			
+		}
+
+		
+	
 			.flex-box{
 				display: flex;
 				flex-direction: row;
@@ -2596,11 +2620,17 @@ button {
 				
 			}
 			.flex-container > img {
-				width:20%;
+				width:23%;
+				padding-bottom:25px;
 			}
 			.flex-container > h1 {
 				color:#19214b;
 				padding-bottom: 50px;
+				font-size: 2.1rem;
+			}
+			.flex-container h2 {
+				font-size: 1.7rem;
+				
 			}
 			
 			header{
