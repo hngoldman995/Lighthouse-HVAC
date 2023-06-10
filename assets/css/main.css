@@ -157,7 +157,9 @@ input, select, textarea {
   }
 
 
-
+#banner, #mainBody, #footer{
+	margin:0;
+}
 
  .flex-container{
 	width: 60%;
@@ -167,6 +169,29 @@ input, select, textarea {
 	padding-left: 200px;
 	padding-bottom: 20px;
 	animation: slide-in-left 1s ease-in-out both;
+ }
+
+ .flexin{
+	padding-bottom: 60px;
+	justify-content: center;
+	text-align: center;
+ }
+ .fade-in-image{
+	margin: auto;
+	justify-content: center;
+	width: 100%;
+ }
+ header{
+	width: 90%;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+ }
+
+ .flex-container h1 {
+	color:rgb(33, 38, 78);
+	padding-top: 30px;
+	padding-bottom: 45px;
  }
 
 
@@ -2227,14 +2252,14 @@ button {
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 400;
-				color: #000000;
+				color: #ffffff;
 				outline: 0;
 				display: block;
 			}
 
 				#nav > ul > li > a:before {
 					display: inline-block;
-					background: #383737;
+					background: #a8a2a2;
 					color: #e4e4e4;
 					width: 2.25em;
 					font-size: 0.8em;
@@ -2380,11 +2405,12 @@ button {
 		color: #2f3f69;
 		text-align: center;
 		border-top: solid 2px #e5e5e5;
-		border-bottom: solid 2px #e5e5e5;
+		/* border-bottom: solid 2px #e5e5e5; */
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
 		text-transform: uppercase;
 		background: url("../../images/banner1.jpg");
+		opacity: 1;
 		background-size: cover;
 		padding: 10em 0;
 	}
@@ -2396,6 +2422,7 @@ button {
 			letter-spacing: 4px;
 			text-align: center;
 			margin: 0;
+			color: white;
 		}
 
 		#banner strong {
@@ -2530,6 +2557,105 @@ button {
 		padding-top: 3em;
 		color:rgb(224, 220, 220);
 	}
+
+
+	@media screen and (min-width: 1280px) {
+		/* For Big TV's (HD Screens)  */
+			.flex-box{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-evenly;
+
+			}
+			.flexin{
+				width:40%;
+				text-align: center;
+				justify-content: center;
+				padding: 50 0px;
+				align-items: center;
+				
+				
+			}
+			.fae-in-image{
+				width: 100%;
+				height:100px;
+			}
+			.flex-container{
+				width:100%;
+				align-items: center;
+				padding-bottom: 15px;
+				
+			}
+			#services{
+				width: 50%;
+			}
+			.logo{
+				width:65%;
+				padding-top: 20px;
+				
+			}
+			.flex-container > img {
+				width:20%;
+			}
+			.flex-container > h1 {
+				color:#19214b;
+				padding-bottom: 50px;
+			}
+			
+			header{
+				padding-bottom: 50px;
+			}
+			#footer{
+				margin: 0;
+				padding:0;
+			}
+			#banner{
+				margin: 0;
+			}
+			#mainBody{
+				margin: 0;
+			}
+			.row{
+				padding-top: 50px;
+			}
+			.contactInfo{
+				padding-left: 200px;
+			}
+			
+		}
+		
+		
+		
+		@media screen and (min-width: 1920px) {
+		/* //For Projectors or Higher Resolution Screens (Full HD) */
+			
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 
 /* XLarge */
@@ -2541,14 +2667,20 @@ button {
 			body, input, textarea, select {
 				font-size: 13pt;
 			}
-		
+
+			
+
 
 			
 	}
 
 /* Large */
 
+
+
 	@media screen and (max-width: 1280px) {
+
+		
 
 		/* Basic */
 
@@ -2594,7 +2726,7 @@ button {
 
 		/* Banner */
 
-			#banner {
+			 #banner {
 				padding: 8em 0;
 			}
 
@@ -2604,7 +2736,7 @@ button {
 
 					#banner > .container br {
 						display: none;
-					}
+					} 
 
 		/* Main */
 
@@ -3025,4 +3157,12 @@ button {
 
 	.links>li{
 		color: rgb(211, 201, 201);
+	}
+
+
+
+	@media screen and (min-width: 800px) {
+		.flex-container > h1 {
+			text-align: left;
+		}
 	}
