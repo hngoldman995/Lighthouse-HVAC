@@ -101,7 +101,9 @@ input, select, textarea {
 /* Basic */
 
 
-
+.contactInfo > section {
+	margin: auto;
+}
 
 
 .container > p {
@@ -2475,7 +2477,10 @@ button {
 	
 	#heating, #airQuality {
 		color: white;
+		width: 90%;
+		margin: auto;
 	}
+
 
 	
 
@@ -2526,6 +2531,7 @@ button {
 		border-top: solid 2px #e5e5e5;
 		background: #f0f0f0;
 		padding: 6em 0 .2em 0;
+		
 	}
 
 		#footer form input[type="text"],
@@ -2569,6 +2575,9 @@ button {
 		}
 
 		p {
+			font-size: 2rem;
+		}
+		#airQuality li {
 			font-size: 2rem;
 		}
 		
@@ -2645,12 +2654,31 @@ button {
 			}
 			#mainBody{
 				margin: 0;
+				
 			}
 			.row{
 				padding-top: 50px;
+				width: 100%;
+				
 			}
+
 			.contactInfo{
-				padding-left: 200px;
+				width: 50%;
+				
+			}
+
+			.container {
+				display: flex;
+				flex-direction: row;
+				justify-content:space-evenly;
+				align-items: center;
+			}
+			#footer{
+				padding-bottom: 60px;
+			}
+			.commentSection{
+				padding-top: 75px;
+				
 			}
 			
 		}
