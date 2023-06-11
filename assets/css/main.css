@@ -2568,22 +2568,22 @@ button {
 	@media screen and (min-width: 1280px) {
 		/* For Big TV's (HD Screens)  */
 		header h2 {
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 		}
 		h2, h3 {
-			 font-size: 2.2rem;
+			 font-size: 1.8rem;
 		}
 
 		p {
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 		#airQuality li {
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 		
 
 		.maintenance > h1 {
-			font-size: 1.8rem;
+			font-size: 1.5rem;
 		}
 		
 		.flex-items{
@@ -2635,10 +2635,10 @@ button {
 			.flex-container > h1 {
 				color:#19214b;
 				padding-bottom: 50px;
-				font-size: 2.1rem;
+				font-size: 1.8rem;
 			}
 			.flex-container h2 {
-				font-size: 1.7rem;
+				font-size: 1.4rem;
 				
 			}
 			
@@ -2816,6 +2816,51 @@ button {
 			}
 
 	}
+
+
+
+
+@media screen and (min-width: 1000px ) and (max-width: 1590px){
+	.flexin{
+		width:50%;
+		padding-top: 40px;
+		
+	}
+	.flex-container{
+		width: 100%;
+		padding-left: 120px;;
+	}
+	.flex-box{
+		display:flex;
+		align-items: center;
+	}
+
+	.flexin h2 {
+		font-size: 1.1rem;;
+	}
+	.flex-container > img {
+		width: 20%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Medium */
 
@@ -3220,7 +3265,21 @@ button {
 
 
 	@media screen and (min-width: 800px) {
-		.flex-container > h1 {
+		.flex-container  {
+			width: 100%;
+			padding-left: 130px;;
+		}
+		
+	}
+
+	@media screen and (max-width: 800px){
+		
+		.flex-container {
 			text-align: left;
+		}
+
+		#features p {
+			width: 80%;
+			margin: auto;
 		}
 	}
