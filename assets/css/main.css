@@ -2141,47 +2141,6 @@ button {
 /* Header */
 
 
-#blogPage article {
-	border-style: solid;
-	border-color: grey;
-	width: 45%;
-	margin: 0;
-	
-}
-
-
-#blogPage {
-	padding-top: 80px;
-	padding-bottom: 80px;
-	width: 80%;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	margin: auto;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-	
-	#blogHeader {
-		position: relative;
-		text-align: center;
-		height: 520px;
-		background-image: url('../images/Thomas_Point_Lighthouse_Chesapeake_Bay.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		opacity: 0.80;
-	}
-	#blogHeader h1 {
-		color:#0b0f22;
-	} 
-
-	#blogHeader div {
-		padding-left: 45%;
-		padding-top: 210px;
-		animation: fade-in-bottom 1s ease-in-out both;
-	}
 
 
 	 #header{
