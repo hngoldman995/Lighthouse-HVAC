@@ -17,7 +17,36 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+h2{
+    font-size: 1.6rem;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0px;
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.3;
+    text-align: center;
+}
+
+strong{
+    color:#425385;
+}
+
+
+
+
+
+
 /* BLOG */
+
+.backgroundBlog{
+    background-color: #7887ad;
+    padding-bottom: 100px;
+}
+
+
+
 #blog{
     display:flex;
     justify-content: center;
@@ -34,14 +63,11 @@ body{
     flex-direction: column;
 }
 
-.blog-heading span{
-    color: #294ba8;
-}
-
 .blog-heading h3{
     font-size: 2.4rem;
     color: #2b2b2b;
     font-weight: 600;
+    padding-top: 40px;
 }
 .blog-container{
     display: flex;
@@ -72,7 +98,7 @@ body{
     flex-direction: column;
 }
 .blog-text span{
-    color: #294ba8;
+    color: #4c57b6;
     font-size: 0.9rem;
 }
 .blog-text .blog-title{
@@ -81,7 +107,7 @@ body{
     color: #272727;
 }
 .blog-text .blog-title:hover{
-    color: #294ba8;
+    color: #4c57b6;
     transition: all ease 0.3s;
 }
 .blog-text p{
@@ -98,7 +124,7 @@ body{
     color: #0f0f0f;
 }
 .blog-text a:hover{
-    color: #294ba8;
+    color: #4c57b6;
     transition: all ease 0.3s;
 }
 @media(max-width:1250px){
@@ -113,7 +139,7 @@ body{
 }
 @media(max-width:550px){
     .blog-box{
-        margin: 20px 10px;
+        margin: 23px 10px;
         width:100%;
     }
     #blog{
@@ -123,36 +149,99 @@ body{
 
 /* Nav */
 
-li, a, button {
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-    color:black;
+
+
+header{
+    background-color:#2b2b2b ;
 }
 
-#blogHeader{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 10%;
-}
-
-.nav__links{
+li{
     list-style: none;
 }
-.nav__links li{
-    display: inline-block;
-    padding: 0px 20px;
+
+a{
+    color: white;
+    text-decoration: none;
 }
-.nav__links li a {
-    transition: all 0.3s ease 0s;
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
 }
-.nav__links li a:hover {
-    color:#294ba8;
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 60px;
 }
-button{
-    padding: 9px 25px;
+
+.nav-branding{
+    font-size: 1.5rem;
+    font-weight: 300;
 }
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color:#fff;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top:70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #2b2b2b;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left:0;
+    }
+}
+
+
+
 
 /* FOOTER */
 
@@ -185,3 +274,213 @@ button{
     #footer h2 {
         text-align: center;
     }
+
+
+    /* Services */
+
+   
+ .flex-container{
+	width: 50%;
+	display: flex;
+	gap: 10px 10px;
+	padding-bottom: 20px;
+	animation: slide-in-left 1s ease-in-out both;
+    margin: auto;
+ }
+
+
+
+ 
+ .flex-container h1 {
+	color:rgb(33, 38, 78);
+	padding-top: 30px;
+	padding-bottom: 45px;
+ }
+
+
+ .flex-container h2 {
+	font-size: 1rem;
+	font-weight: bold;
+ }
+
+
+.flex-container img {
+	width: 30%;
+	
+}
+
+
+/* Logo */
+
+.opener {
+    width: 55%;
+    margin-left: 30px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+
+/* Opener */
+
+.lighthouse{
+    height: 500px;
+    width:100%;
+    display:flex;
+    position:relative;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 135px;
+}
+
+.lighthouse::before{
+    content: '';
+    background-image: url('../css/images/dreamstime_xxl_141599915.jpg');
+    background-size: cover;
+    position:absolute;
+    opacity: 0.35;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.lighthouse h1, h2, h3 {
+    position: relative;
+    color:#242529;
+    text-align: center;
+    line-height: 1.4;
+}
+.lighthouse h1{
+    font-weight: 800;
+}
+
+.lighthouse h2{
+    font-size: 3.9rem;
+    font-weight: 900;
+    color: #425385;
+    padding-bottom: 30px;
+}
+
+.lighthouse h3{
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color:#0c0d0e;
+}
+
+.button > a{
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+
+.button {
+	 background: rgb(182, 44, 44);
+	 display: inline;
+	 padding: 10px 13px;
+	 border-radius: 4%;
+	  cursor: pointer;
+      position: relative;
+      font-weight: 700;
+}
+
+@media(max-width:768px){
+    .lighthouse h1{
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+    }
+    .lighthouse h2{
+        font-size: 2.3rem;
+    }
+    .lighthouse h3{
+        font-size: 1rem;
+        width: 70%;
+    }
+
+}
+
+@media(max-width: 950px){
+    .opener{
+        width: 100%;
+    }
+    .services{
+        width:100%;
+    }
+    .flexbox{
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .logo img{
+        width: 70%;
+        padding-bottom: 40px;
+    }
+    .opener{
+        width: 80%;
+        padding-bottom: 100px;
+    }
+    .logo{
+        text-align: center;
+        margin:auto;
+    }
+    
+}
+
+@media(min-width: 950px){
+    .lighthouse{
+        height: 650px;
+        padding-top: 200px;
+        
+    }
+
+    .logo{
+        width: 70%;
+        margin: auto;
+    }
+    
+}
+
+@media(min-width:1500px){
+    .opener{
+        width: 40%;
+    }
+}
+
+/* Opener and Services */
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* About Us */
+
+#aboutUs{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+#aboutUs h1{
+    text-align: center;
+    color:#425385;
+    font-size: 2.9rem;
+    padding-top: 60px;
+    
+}
+
+#aboutUs h2{
+    color:#383846;
+    font-size: 1.5rem;
+    padding-top: 50px;
+}
+
