@@ -440,12 +440,16 @@ a{
         width: 70%;
         margin: auto;
     }
-    
+   
 }
 
 @media(min-width:1500px){
     .opener{
         width: 40%;
+    }
+    .about{
+        width: 60%;
+        margin: auto;
     }
 }
 
