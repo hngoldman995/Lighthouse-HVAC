@@ -238,6 +238,8 @@ a{
     .nav-menu.active{
         left:0;
     }
+
+    
 }
 
 
@@ -246,34 +248,8 @@ a{
 /* FOOTER */
 
 
-#footer {
-    position: relative;
-    overflow: hidden;
-    border-top: solid 2px #e5e5e5;
-    background: #f0f0f0;
-    padding: 6em 0 0 0;
-    
-}
 
-    #footer form input[type="text"],
-    #footer form input[type="email"],
-    #footer form input[type="password"],
-    #footer form select,
-    #footer form textarea {
-        background: #f7f7f7;
-    }
 
-        #footer form input[type="text"]:focus,
-        #footer form input[type="email"]:focus,
-        #footer form input[type="password"]:focus,
-        #footer form select:focus,
-        #footer form textarea:focus {
-            background: #fff;
-        }
-
-    #footer h2 {
-        text-align: center;
-    }
 
 
     /* Services */
@@ -333,11 +309,13 @@ a{
     align-items: center;
     flex-direction: column;
     padding-top: 135px;
+    z-index: -1
 }
 
 .lighthouse::before{
     content: '';
-    background-image: url('../css/images/dreamstime_xxl_141599915.jpg');
+    pointer-events: none;
+    background: url('../css/images/dreamstime_xxl_141599915.jpg');
     background-size: cover;
     position:absolute;
     opacity: 0.35;
