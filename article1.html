@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Blog</title>
+</head>
+<body>
+    <!-- Header -->
+		<header>
+			<nav class="navbar">
+				<a class="nav-branding" href="/"><span>LightHouse HVAC</span></a>
+
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#aboutUs" class="nav-link">About Us</a>
+					</li>
+				
+					<li class="nav-item">
+						<a href="blog.html" class="nav-link">Blog</a>
+					</li> 
+					</ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+			</nav>
+			
+		</header>
+		<!-- Logo -->
+	<section class="blogImage">
+        <div class="blog-img">
+            <img src="images\happyfamily.jpg" alt="blog">
+        </div>
+
+        <section class="articles">
+            <div class="flex-items">
+				<h1>What are the difficulties of choosing the correct HVAC system in Annapolis, MD?</h1>
+            </div>
+            <div class="flex-items">
+                <p>One of the difficulties of choosing the correct HVAC system in Annapolis, MD is determining the appropriate size of the system for the home or building. An HVAC system that is too small will struggle to maintain a comfortable temperature, while a system that is too large can be inefficient and costly to operate. This requires careful consideration of factors such as the size of the space, the insulation, and the number of occupants, among others.
+                </br>
+                Another challenge is selecting the most appropriate type of HVAC systems for the specific needs of the home building. There are several different types of HVAC systems, including central air conditioning, ductless mini-splits, and heat pumps, among others. Each of these systems has its own benefits and limitations, and it can be challenging to determine which system is the best fit for the specific needs of the space. 
+            </br>
+                Overall, choosing the correct HVAC system in Annapolis, MD requires careful consideration of several factors, including the size of the space, the appropriate type of system, and the selection of a qualified professional.
+            </br>
+                Let <strong>Lighthouse HVAC LLC</strong> help guide you along and install your new HVAC system. <strong>Lighthouse HVAC LLC</strong> offers an unmatched level of service.</p>
+                </div>
+        </section>
+	</section>
+
+        
+	<!-- Footer -->
+	<section id="footer">
+		<div class="container"> 
+
+			<h2>Questions or comments? <strong>Get in touch:</strong></h2> 
+			
+			<div class="row">
+				
+					
+				
+				<div class="form">
+					<section>
+						<form onsubmit="sendEmail(); reset(); return false;">
+							<div class="getInTouch">
+								<div class="">
+									<input id="name" placeholder="Your Name" type="text" />
+								</div>
+								<div class="">
+									<input type="email" placeholder="Email" id="email" />
+								</div>
+								<div class="">
+									<textarea id="message" placeholder="Message"></textarea>
+								</div>
+								<div class="">
+									<button type="submit">Send</button>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+				<div class="contactInfo">
+		
+							<div class="commentSection">
+								<ul class="icons">
+									<li class="">
+										Edgewater MD
+									</li>
+									<li class="">
+										<a href="tel:443-370-8445"> (443) 343-7540</a>
+									</li>
+									<li class="">
+										Rmasgay.lighthousehvac@gmail.com
+									</li>
+									<li class="">
+										<a href="https://www.facebook.com/lighthousehvacmaryland">https://www.facebook.com/lighthousehvacmaryland</a>
+									</li>
+								</ul>
+							</div>
+							
+								
+						
+						
+					
+				</div>
+			</div>
+		</div>
+		<!-- <div id="copyright" class="container"> -->
+			<!-- <ul class="links">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: HTML5 UP</a></li>
+			</ul> -->
+		<!-- </div> -->
+	</section>
+
+    
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail(){
+			Email.send({
+				Host : "smtp.gmail.com",
+				Username : "hannahgoldman995@gmail.com",
+				Password : "Crazy88mma135",
+				To : 'hannahgoldman995@gmail.com',
+				From : document.getElementdById('email').value,
+				Subject : 'New Contact Form Enquiry',
+				Body : "And this is the body"
+			}).then(
+			message => alert(message)
+			);
+		}
+	</script>
+</body>
+</html>

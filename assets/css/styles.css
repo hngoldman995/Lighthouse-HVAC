@@ -257,7 +257,6 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     justify-content: space-around;
     padding-top: 50px;
 }
@@ -306,6 +305,7 @@ form {
 
 .contactInfo {
     line-height: 2;
+    font-size: 18px;
 }
 
 .contactInfo a {
@@ -585,4 +585,60 @@ form {
 
 .blog-heading a:hover{
     color:#425385;
+}
+
+
+
+/* ARTICLE PAGES */
+.articles{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-items{
+    width: 100%;
+}
+
+.flex-items h1 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    color:#333a50;
+}
+
+.flex-items p {
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+}
+.blogImage{
+    width: 75%;
+    margin:auto;
+    padding-top: 40px;
+}
+
+@media(max-width: 780px){
+    .flex-items h1 {
+        font-size: 1.6rem;
+        width: 88%;
+        margin:auto;
+    }
+
+    .flex-items p{
+        font-size: 1.2rem;
+        width: 85%;
+        margin: auto;
+    }
+    .blogImage{
+        width:100%;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1280px){
+    .blogImage{
+        width:50%;
+    }
 }
